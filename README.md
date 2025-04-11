@@ -137,6 +137,7 @@ data/
 │   │   │   ├── images/
 │   │   │   └── annfiles/
 │   └── EVAttrs-95K-FAIR1M-{train,val}.json
+EagleVision/
 ```
 
 Ensure `annfiles` follow DOTA-style with attribute dictionary:
