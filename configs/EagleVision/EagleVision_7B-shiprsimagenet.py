@@ -4,7 +4,7 @@ _base_ = [
 ]
 
 angle_version = 'le90'
-pretrained = "/mnt/data1/jianghx/ckpts/InternVL2-8B"
+pretrained = "OpenGVLab/InternVL2-8B"
 num_image_token = 64
 template = "internlm2-chat"
 backend_args = None
@@ -244,7 +244,7 @@ test_evaluator_task1 = dict(
     type='EVBench',
     format_only=False,
     merge_patches=False,
-    img_path='/mnt/data1/jianghx/data/ShipRSImageNet_V1/val/images',
+    img_path='../data/ShipRSImageNet_V1/val/images',
     task='Task1',
     outfile_prefix='./work_dirs/EagleVision_7B-shiprsimagenet/val')
 
@@ -252,7 +252,7 @@ test_evaluator_task2 = dict(
     type='EVBench',
     format_only=True,
     merge_patches=False,
-    xml_path='/mnt/data1/jianghx/data/ShipRSImageNet_V1/val/labelXml',
-    caption_gt_path='/mnt/data1/jianghx/data/ShipRSImageNet_V1/EVAttrs-ShipRSImageNet-val.json',
+    xml_path='../data/ShipRSImageNet_V1/val/labelXml',
+    caption_gt_path='../data/ShipRSImageNet_V1/EVAttrs-ShipRSImageNet-val.json',
     task='Task2',
     outfile_prefix='./work_dirs/EagleVision_7B-shiprsimagenet/val')

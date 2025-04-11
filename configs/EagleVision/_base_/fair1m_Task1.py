@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'FAIR1MDataset'
-data_root = '/mnt/data1/jianghx/data/FAIR1M/split_ss'
+data_root = '../data/FAIR1M/split_ss'
 
 backend_args = None
 

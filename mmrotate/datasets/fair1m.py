@@ -56,7 +56,7 @@ class FAIR1MDataset(BaseDataset):
     def __init__(self,
                  diff_thr: int = 100,
                  img_suffix: str = 'png',
-                 pretrained: str = "/mnt/data1/jianghx/ckpts/InternVL2-1B",
+                 pretrained: str = "OpenGVLab/InternVL2-1B",
                  max_seq_length = 4096,
                  num_image_token = 64,
                  template_name = "Hermes-2",

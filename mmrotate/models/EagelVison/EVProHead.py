@@ -241,7 +241,7 @@ class EagleVisionProHead(ConvFCBBoxHead):
     """
     def __init__(self, 
                  fc_out_channels: int = 1024, 
-                 pretrained="/mnt/data1/jianghx/ckpts/InternVL2-2B",
+                 pretrained="OpenGVLab/InternVL2-2B",
                  drop_path_rate = 0.1,
                  vision_select_layer = -1,
                  dynamic_image_size = True,

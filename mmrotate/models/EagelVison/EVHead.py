@@ -93,7 +93,7 @@ class EagleVisionHead(RotatedRTMDetSepBNHead):
                  act_cfg: ConfigType = dict(type='SiLU'),
                  pred_kernel_size: int = 1,
                  exp_on_reg: bool = False,
-                 pretrained: str = "/mnt/data1/jianghx/ckpts/InternVL2-1B",
+                 pretrained: str = "OpenGVLab/InternVL2-1B",
                  drop_path_rate = 0.1,
                  vision_select_layer = -1,
                  dynamic_image_size = True,

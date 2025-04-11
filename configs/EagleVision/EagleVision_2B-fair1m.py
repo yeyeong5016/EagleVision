@@ -4,7 +4,7 @@ _base_ = [
 ]
 
 angle_version = 'le90'
-pretrained = "/mnt/data1/jianghx/ckpts/InternVL2-2B"
+pretrained = "OpenGVLab/InternVL2-2B"
 num_image_token = 64
 template = "internlm2-chat"
 backend_args = None
@@ -244,7 +244,7 @@ test_evaluator_task1 = dict(
     type='EVBench',
     format_only=True,
     merge_patches=True,
-    img_path='/mnt/data1/jianghx/data/FAIR1M/test/images',
+    img_path='../data/FAIR1M/test/images',
     task='Task1',
     outfile_prefix='./work_dirs/EagleVision_2B-fair1m/test')
 
@@ -252,7 +252,7 @@ test_evaluator_task2 = dict(
     type='EVBench',
     format_only=True,
     merge_patches=True,
-    xml_path='/mnt/data1/jianghx/data/FAIR1M/val/labelXml',
-    caption_gt_path='/mnt/data1/jianghx/data/FAIR1M/EVAttrs-FAIR1M-val.json',
+    xml_path='../data/FAIR1M/val/labelXml',
+    caption_gt_path='../data/FAIR1M/EVAttrs-FAIR1M-val.json',
     task='Task2',
     outfile_prefix='./work_dirs/EagleVision_2B-fair1m/val')

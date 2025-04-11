@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'MAR20Dataset'
-data_root = '/mnt/data1/jianghx/data/MAR20'
+data_root = '../data/MAR20'
 
 backend_args = None
 

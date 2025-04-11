@@ -1,6 +1,6 @@
 # dataset settings
 dataset_type = 'SHIPRSImageNETDataset'
-data_root = '/mnt/data1/jianghx/data/ShipRSImageNet_V1'
+data_root = '../data/ShipRSImageNet_V1'
 
 backend_args = None
 
