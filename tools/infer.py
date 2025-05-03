@@ -220,7 +220,7 @@ def main(args):
     # the dataset_meta is loaded from the checkpoint and
     # then pass to the model in init_detector
     visualizer.dataset_meta = model.dataset_meta
-    # test a huge image by patches
+    # test a image
     result = inference_detector(model, args.img_dir)
 
     # show the results
